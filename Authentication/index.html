@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <title>S A L T login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1 class="firstHeading" style="text-align: center;color:white;font-size: 50px;">Speed & Location Tracking System</h1>
+  <h1 style="text-align: center;color:white;font-size: 40px;">S A L T</h1>
+
+  <div id="login_div" class="main-div">
+    <h3>Login to your account</h3>
+    <input type="email" placeholder="Enter username" id="email_field" />
+    <input type="password" placeholder="Enter password" id="password_field" />
+
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Logged IN</h3>
+    <p id="user_para">Logged in</p>
+    <button onclick="logout()"><b>Logout</b></button>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDgSyCP0ZJE0M1lH_EUjxzEq_6EjB7waCU",
+      authDomain: "salt-3b421.firebaseapp.com",
+      databaseURL: "https://salt-3b421.firebaseio.com",
+      projectId: "salt-3b421",
+      storageBucket: "salt-3b421.appspot.com",
+      messagingSenderId: "916405640097",
+      appId: "1:916405640097:web:a1ebaa3ddb3d40032709e0",
+      measurementId: "G-BNRBXHK6GZ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
